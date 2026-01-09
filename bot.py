@@ -15,4 +15,4 @@ async def on_ready():
 async def тест(ctx):
     await ctx.send("✅ Бот работает! Хостинг ок.")
 
-bot.run(os.getenv("MTQxNjc1OTE1Njg4MjI4MDU5OQ.GcqZfM.-7JbMu5Xpw6PAljQXwBYQMTL_RCCiiA23wcG-k"))
+bot.run(os.getenv("TOKEN"))
