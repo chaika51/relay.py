@@ -15,4 +15,10 @@ async def on_ready():
 async def тест(ctx):
     await ctx.send("✅ Бот работает! Хостинг ок.")
 
-bot.run(os.getenv("TOKEN"))
+token = os.getenv("TOKEN")
+
+if not token:
+    raise RuntimeError("TOKEN не найден")
+
+bot.run(token)
+
